@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/fabien/servlets/Deconnexion.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/web/ModificationEcrivain.jsp</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/web/Liste.jsp</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/Sitraka/packLivre/LivreImp.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/packModele/Modele.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/fabien/helpers/Helper1.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/web/assets/Bootstrap/css/bootstrap.css</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/Antonio/utils/Helper.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/web/modifierlivre.jsp</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/Antonio/Servlet/ModifierLivre.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/web/index.html</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/web/Inscription.jsp</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/web/ListeLivre.jsp</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/web/Accueil.jsp</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/fabien/packEcrivain/Ecrivain.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/fabien/servlets/ModificationEcrivain.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/fonctionPostgres.sql</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/fabien/packEcrivain/CatEcrivain.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/Sitraka/servlet/Insertion.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/fabien/servlets/InsertionEcrivain.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/packMain/Main.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/web/GererLivre.jsp</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/fabien/servlets/Login.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/Antonio/Servlet/Insererlivre.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/fabien/servlets/Inscription.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/fabien/servlets/GestionErreur.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/fabien/servlets/ListeEcrivain.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/Antonio/packCategorie/Categorie.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/web/insererlivre.jsp</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/web/ListeEcrivain.jsp</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/Antonio/packLivre/Livre.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/fabien/servlets/SuppressionEcrivain.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/Antonio/Servlet/DeleteLivre.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/web/assets/Bootstrap/css/bootstrap.min.css</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/fabien/packClient/Client.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/src/java/fabien/servlets/Inscription1.java</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/web/InsertionLivre.jsp</file>
+            <file>file:/C:/Users/Rakotoson/Documents/NetBeansProjects/BibliothequeVaovao_8.2/web/FormulaireEcrivain.jsp</file>
+        </group>
+    </open-files>
+</project-private>
