@@ -10,5 +10,5 @@ package helpers;
  * @author Rakotoson
  */
 class sta {
-    
+    This is useless so I let myself do it. : )
 }
