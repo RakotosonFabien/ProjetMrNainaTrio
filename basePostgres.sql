@@ -3,13 +3,13 @@ CREATE USER bibliotheque password '123456';
 ALTER DATABASE projets2021 OWNER to bibliotheque;
 
 SELECT * FROM pg_catalog.pg_tables WHERE schemaname != 'pg_catalog' AND schemaname != 'information_schema';
-CREATE SEQUENCE idCatEcrivain START 1; 
+CREATE SEQUENCE idCatEcrivain START 4; 
 CREATE TABLE catEcrivain(
 	id INT PRIMARY key,
 	nom VARCHAR(20)
 );
 
-CREATE SEQUENCE idCatLivre START 1;
+CREATE SEQUENCE idCatLivre START 4;
 CREATE TABLE catLivre(
 	id INT PRIMARY KEY,
 	nom VARCHAR(20)
@@ -38,6 +38,7 @@ CREATE SEQUENCE idClient START 1;
 
 INSERT INTO CLIENT VALUES (nextval('idClient'), 'Rakotoson', 'Fabien', DATE '2001-01-02', '123456', 'rakotosonfabien@gmail.com');
 
+/*
 CREATE SEQUENCE idDepotClient START  1;
 CREATE TABLE DepotClient(
 id int PRIMARY KEY,
@@ -54,6 +55,7 @@ nom varchar(20),
 mdp varchar(40)
 );
 
+*/
 CREATE SEQUENCE idLivre START 1;
 CREATE TABLE Livre(
 id int PRIMARY KEY,
@@ -120,7 +122,7 @@ begin
 	end if;
 	return nombreLivres;
 end
-$$ language plpgsql
+$$ language plpgsql;
 
 /*--------------------Views---------------------------------*/
 /*--Liste des livres non remis par les clients */
@@ -134,12 +136,12 @@ CREATE OR REPLACE VIEW ecrivainComplet AS SELECT ecrivain.*, catEcrivain.nom as 
 CREATE OR REPLACE VIEW livreComplet AS SELECT livre.*, catLivre.nom as nomCategorie, ecrivainComplet.nom as nomEcrivain, ecrivainComplet.prenom as prenomEcrivain, ecrivainComplet.dateNaissance, ecrivainComplet.idCategorie as idCatEcrivain, ecrivainComplet.nomCategorie as nomCatEcrivain FROM livre LEFT JOIN catLivre ON catLivre.id = livre.idCategorie JOIN ecrivainComplet ON livre.idEcrivain = ecrivainComplet.id;
 
 /*------------------------------Donnees de test-----------------------------*/
-INSERT INTO catEcrivain VALUES (nextval('idCatEcrivain'), 'debutant');
-INSERT INTO catEcrivain VALUES (nextval('idCatEcrivain'), 'amateur');
-INSERT INTO catEcrivain VALUES (nextval('idCatEcrivain'), 'professionnel');
-INSERT INTO catLivre VALUES (nextval('idCatLivre'), 'romance');
-INSERT INTO catLivre VALUES (nextval('idCatLivre'), 'science-fiction');
-INSERT INTO catLivre VALUES (nextval('idCatLivre'), 'action');
+INSERT INTO catEcrivain VALUES (1, 'debutant');
+INSERT INTO catEcrivain VALUES (2, 'amateur');
+INSERT INTO catEcrivain VALUES (3, 'professionnel');
+INSERT INTO catLivre VALUES (1, 'romance');
+INSERT INTO catLivre VALUES (2, 'science-fiction');
+INSERT INTO catLivre VALUES (3, 'action');
 
 INSERT INTO Fournisseur VALUES (nextval('idFourniseur'), 'Global Groupe');
 INSERT INTO Fournisseur VALUES (nextval('idFourniseur'), 'MacForwarding');
@@ -147,14 +149,21 @@ INSERT INTO Fournisseur VALUES (nextval('idFourniseur'), 'SisiEnterprise');
 
 
 INSERT INTO ecrivain VALUES (nextval('idEcrivain'), '3', 'Rakotoson', 'Fabien', DATE '2001-1-2');
-	INSERT INTO livre values (nextval('idLivre'), currval('idEcrivain'), '3', 'Action-pour-adultes', 'Pas pour les enfants alors ne regarde pas', DATE '2020-3-15', 100000, 2);
-	INSERT INTO livre values (nextval('idLivre'), currval('idEcrivain'), '3', 'Action-pour-adultes s2', 'What is this? Not for normal persons!', DATE '2020-8-19', 110000, 4);
+	INSERT INTO livre values (nextval('idLivre'), currval('idEcrivain'), '3', 'Action-pour-jeunes', 'Pas pour les enfants alors ne regarde pas', DATE '2020-3-15', 100000, 2);
+	INSERT INTO livre values (nextval('idLivre'), currval('idEcrivain'), '3', 'Action-pour-jeunes s2', 'What is this? Not for normal persons!', DATE '2020-8-19', 110000, 4);
+	INSERT INTO livre values (nextval('idLivre'), currval('idEcrivain'), '2', 'Question pour les noobs', 'Elu le livre le plus drole en 2018', DATE '2018-2-15', 200000, 10);
+	INSERT INTO livre values (nextval('idLivre'), currval('idEcrivain'), '1', 'Question pour les noobs 2', 'Elu le livre le plus drole en 2019', DATE '2019-4-18', 200000, 10);
+	INSERT INTO livre values (nextval('idLivre'), currval('idEcrivain'), '2', 'La mort la plus atroce', 'Histoire d un gamin qui meurt', DATE '2019-4-18', 200000, 10);
+	
 	
 
 INSERT INTO ecrivain VALUES (nextval('idEcrivain'), '3', 'Ranaivoson', 'Antonio', DATE '2000-10-21');
 	INSERT INTO livre values (nextval('idLivre'), currval('idEcrivain'), '2', 'Dictionnaire java','Pas de description1', DATE '2019-4-12', 20000, 12);
-	INSERT INTO livre values (nextval('idLivre'), currval('idEcrivain'), '1', 'Liste des gg', 'Pas de description2', DATE '2020-1-5', 25000, 6);
-
+	INSERT INTO livre values (nextval('idLivre'), currval('idEcrivain'), '1', 'Liste des gg', 'Pas de description2', DATE '2019-1-5', 25000, 10);
+	INSERT INTO livre values (nextval('idLivre'), currval('idEcrivain'), '1', 'Your lie in January', 'Histoire d une fille qui meurt a la fin', DATE '2020-1-5', 200000, 10);
+	INSERT INTO livre values (nextval('idLivre'), currval('idEcrivain'), '1', 'I want to eat your soul', 'La mort, comme d habitude', DATE '2016-3-8', 140000, 5);
+	INSERT INTO livre values (nextval('idLivre'), currval('idEcrivain'), '3', 'Action ou verite', 'Histoire qui va vous faire douter de tout', DATE '2016-3-8', 120000, 5);
+	
 
 
 	
