@@ -61,7 +61,7 @@ CREATE TABLE Livre(
 id int PRIMARY KEY,
 idEcrivain INT constraint fk_livreEcrivain references Ecrivain(id),
 idCategorie INT constraint fk_livreCategorie references catLivre(id),
-titre VARCHAR(20),
+titre VARCHAR(40),
 description varchar(255),
 dateSortie date,
 prix float,
